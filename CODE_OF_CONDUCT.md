@@ -110,7 +110,7 @@ If you decide to join the [Community Slack](http://bit.ly/join-rama-slack), plea
 **1. Treat everyone in the community with respect.**
 
 - We strive to make this community a warm place for people from all industries, use cases, geographies, and backgrounds. Harassment of any kind is not acceptable and won’t be tolerated.
-- Please follow the guidelines as outlined in the Rama Community [code of conduct here](https://github.com/iamjpsingh/rama/blob/master/CODE_OF_CONDUCT.md).
+- Please follow the guidelines as outlined in the Rama Community [code of conduct here](https://github.com/itsjpthakur/rama/blob/master/CODE_OF_CONDUCT.md).
 
 **2. Use the right channel.**
 
@@ -118,7 +118,7 @@ If you decide to join the [Community Slack](http://bit.ly/join-rama-slack), plea
 
 **3. Ask thoughtful questions.**
 
-- We’re all here to help each other out. The best way to get help is by investing effort into your questions. First check and see if your question is answered in the [Rama documentation](https://github.com/imajpsingh/rama) or on [StackOverflow](https://stackoverflow.com/questions/tagged/apache-rama). You can also check GitHub trackers to see if your inquiry has been submitted before: [GitHub discussions](https://github.com/iamjpsingh/rama/discussions) for questions and feature requests and [GitHub issues](https://github.com/iamjpsingh/rama/issues) for bug reports. Then, use Slack search to see if your question has already been asked and answered in the past.
+- We’re all here to help each other out. The best way to get help is by investing effort into your questions. First check and see if your question is answered in the [Rama documentation](https://github.com/imajpsingh/rama) or on [StackOverflow](https://stackoverflow.com/questions/tagged/apache-rama). You can also check GitHub trackers to see if your inquiry has been submitted before: [GitHub discussions](https://github.com/itsjpthakur/rama/discussions) for questions and feature requests and [GitHub issues](https://github.com/itsjpthakur/rama/issues) for bug reports. Then, use Slack search to see if your question has already been asked and answered in the past.
 
 If you still feel the need to ask a question, make sure you include:
 

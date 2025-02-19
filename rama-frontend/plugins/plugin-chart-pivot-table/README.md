@@ -25,7 +25,7 @@ under the License.
 This plugin provides Pivot Table for Rama.
 
 If you change the logic of this plugin, please update
-[`pivot_table`](https://github.com/iamjpsingh/rama/blob/master/rama/charts/post_processing.py).
+[`pivot_table`](https://github.com/itsjpthakur/rama/blob/master/rama/charts/post_processing.py).
 
 ### Usage
 

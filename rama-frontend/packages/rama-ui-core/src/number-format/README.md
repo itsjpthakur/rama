@@ -55,7 +55,7 @@ console.log(formatNumber('my_format', 1000));
 ```
 
 It also define constants for common d3 formats. See the full list of formats in
-[NumberFormats.js](https://github.com/iamjpsingh/rama/blob/master/rama-frontend/packages/rama-ui-core/src/number-format/NumberFormats.ts).
+[NumberFormats.js](https://github.com/itsjpthakur/rama/blob/master/rama-frontend/packages/rama-ui-core/src/number-format/NumberFormats.ts).
 
 ```js
 import { NumberFormats } from '@rama-ui-number-format';

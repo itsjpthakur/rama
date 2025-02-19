@@ -31,7 +31,7 @@ RAMA is a modern, enterprise-ready business intelligence web application
 
 ## Source Code
 
-* <https://github.com/iamjpsingh/rama>
+* <https://github.com/itsjpthakur/rama>
 
 ## TL;DR
 
@@ -253,10 +253,10 @@ On helm this can be set on `extraSecretEnv.RAMA_SECRET_KEY` or `configOverrides.
 | ramaNode.topologySpreadConstraints | list | `[]` | TopologySpreadConstrains to be added to ramaNode deployments |
 | ramaWebsockets.affinity | object | `{}` | Affinity to be added to ramaWebsockets deployment |
 | ramaWebsockets.command | list | `[]` |  |
-| ramaWebsockets.config | object | see `values.yaml` | The config.json to pass to the server, see https://github.com/iamjpsingh/rama/tree/master/rama-websocket Note that the configuration can also read from environment variables (which will have priority), see https://github.com/iamjpsingh/rama/blob/master/rama-websocket/src/config.ts for a list of supported variables |
+| ramaWebsockets.config | object | see `values.yaml` | The config.json to pass to the server, see https://github.com/itsjpthakur/rama/tree/master/rama-websocket Note that the configuration can also read from environment variables (which will have priority), see https://github.com/itsjpthakur/rama/blob/master/rama-websocket/src/config.ts for a list of supported variables |
 | ramaWebsockets.containerSecurityContext | object | `{}` |  |
 | ramaWebsockets.deploymentAnnotations | object | `{}` |  |
-| ramaWebsockets.enabled | bool | `false` | This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode see https://github.com/iamjpsingh/rama/blob/master/CONTRIBUTING.md#async-chart-queries |
+| ramaWebsockets.enabled | bool | `false` | This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode see https://github.com/itsjpthakur/rama/blob/master/CONTRIBUTING.md#async-chart-queries |
 | ramaWebsockets.extraContainers | list | `[]` | Launch additional containers into ramaWebsockets pods |
 | ramaWebsockets.image.pullPolicy | string | `"IfNotPresent"` |  |
 | ramaWebsockets.image.repository | string | `"oneacrefund/rama-websocket"` | There is no official image (yet), this one is community-supported |

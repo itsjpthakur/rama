@@ -35,7 +35,7 @@ export const GlobalStyles = () => (
         font-weight: ${theme.typography.weights.bold};
       }
       // CSS hack to resolve the issue caused by the invisible echart tooltip on
-      // https://github.com/iamjpsingh/rama/issues/30058
+      // https://github.com/itsjpthakur/rama/issues/30058
       .echarts-tooltip[style*='visibility: hidden'] {
         display: none !important;
       }

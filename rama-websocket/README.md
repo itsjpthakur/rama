@@ -29,7 +29,7 @@ To use this feature, Rama needs to be configured to enable global async queries 
 
 ## Architecture
 
-This implementation is based on the architecture defined in [SIP-39](https://github.com/iamjpsingh/rama/issues/9190).
+This implementation is based on the architecture defined in [SIP-39](https://github.com/itsjpthakur/rama/issues/9190).
 
 ### Streams
 
@@ -97,7 +97,7 @@ GLOBAL_ASYNC_QUERIES_JWT_COOKIE_NAME
 GLOBAL_ASYNC_QUERIES_JWT_SECRET
 ```
 
-More info on Rama configuration values for async queries: https://github.com/iamjpsingh/rama/blob/master/CONTRIBUTING.md#async-chart-queries
+More info on Rama configuration values for async queries: https://github.com/itsjpthakur/rama/blob/master/CONTRIBUTING.md#async-chart-queries
 
 ## StatsD monitoring
 

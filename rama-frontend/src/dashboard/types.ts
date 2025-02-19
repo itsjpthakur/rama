@@ -42,7 +42,7 @@ export type { Dashboard } from 'src/types/Dashboard';
 export type ChartReducerInitialState = typeof chart;
 
 // chart query built from initialState
-// Ref: https://github.com/iamjpsingh/rama/blob/dcac860f3e5528ecbc39e58f045c7388adb5c3d0/rama-frontend/src/dashboard/reducers/getInitialState.js#L120
+// Ref: https://github.com/itsjpthakur/rama/blob/dcac860f3e5528ecbc39e58f045c7388adb5c3d0/rama-frontend/src/dashboard/reducers/getInitialState.js#L120
 export interface ChartQueryPayload extends Partial<ChartReducerInitialState> {
   id: number;
   form_data?: ChartProps['rawFormData'];

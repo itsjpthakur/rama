@@ -70,7 +70,7 @@ extraEnv: {}
   # Different gunicorn settings, refer to the gunicorn documentation
   # https://docs.gunicorn.org/en/stable/settings.html#
   # These variables are used as Flags at the gunicorn startup
-  # https://github.com/iamjpsingh/rama/blob/master/docker/run-server.sh#L22
+  # https://github.com/itsjpthakur/rama/blob/master/docker/run-server.sh#L22
   # Extend timeout to allow long running queries.
   # GUNICORN_TIMEOUT: 300
   # Increase the gunicorn worker amount, can improve performance drastically
@@ -610,7 +610,7 @@ ramaCeleryFlower:
 
 ramaWebsockets:
   # -- This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode
-  # see https://github.com/iamjpsingh/rama/blob/master/CONTRIBUTING.md#async-chart-queries
+  # see https://github.com/itsjpthakur/rama/blob/master/CONTRIBUTING.md#async-chart-queries
   enabled: false
   replicaCount: 1
   # -- Sets the [pod disruption budget](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for ramaWebsockets pods
@@ -629,8 +629,8 @@ ramaWebsockets:
     repository: oneacrefund/rama-websocket
     tag: latest
     pullPolicy: IfNotPresent
-  # -- The config.json to pass to the server, see https://github.com/iamjpsingh/rama/tree/master/rama-websocket
-  # Note that the configuration can also read from environment variables (which will have priority), see https://github.com/iamjpsingh/rama/blob/master/rama-websocket/src/config.ts for a list of supported variables
+  # -- The config.json to pass to the server, see https://github.com/itsjpthakur/rama/tree/master/rama-websocket
+  # Note that the configuration can also read from environment variables (which will have priority), see https://github.com/itsjpthakur/rama/blob/master/rama-websocket/src/config.ts for a list of supported variables
   # @default -- see `values.yaml`
   config:
     {

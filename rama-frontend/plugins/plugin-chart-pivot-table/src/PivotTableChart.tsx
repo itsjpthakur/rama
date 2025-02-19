@@ -120,7 +120,7 @@ const aggregatorsFactory = (formatter: NumberFormatter) => ({
 });
 
 /* If you change this logic, please update the corresponding Python
- * function (https://github.com/iamjpsingh/rama/blob/master/rama/charts/post_processing.py),
+ * function (https://github.com/itsjpthakur/rama/blob/master/rama/charts/post_processing.py),
  * or reach out to @betodealmeida.
  */
 export default function PivotTableChart(props: PivotTableProps) {

@@ -16,11 +16,11 @@
   ],
   "homepage": "https://github.com/imajpsingh/rama",
   "bugs": {
-    "url": "https://github.com/iamjpsingh/rama/issues"
+    "url": "https://github.com/itsjpthakur/rama/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamjpsingh/rama.git",
+    "url": "https://github.com/itsjpthakur/rama.git",
     "directory": "rama-frontend"
   },
   "license": "Apache-2.0",

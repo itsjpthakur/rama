@@ -19,7 +19,7 @@ under the License.
 
 ## @rama-ui/demo
 
-[![Version](https://img.shields.io/github/package-json/v/apache/rama?filename=rama-frontend%2Fpackages%2Frama-ui-demo%2Fpackage.json&style=flat)](https://github.com/iamjpsingh/rama/blob/master/rama-frontend/packages/rama-ui-demo/package.json)
+[![Version](https://img.shields.io/github/package-json/v/apache/rama?filename=rama-frontend%2Fpackages%2Frama-ui-demo%2Fpackage.json&style=flat)](https://github.com/itsjpthakur/rama/blob/master/rama-frontend/packages/rama-ui-demo/package.json)
 
 Storybook of `@rama-ui` packages. See it live at
 [apache-rama.github.io/rama-ui](https://apache-rama.github.io/rama-ui)

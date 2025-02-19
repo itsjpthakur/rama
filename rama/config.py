@@ -82,7 +82,7 @@ STATS_LOGGER = DummyStatsLogger()
 # By default will log events to the metadata database with `DBEventLogger`
 # Note that you can use `StdOutEventLogger` for debugging
 # Note that you can write your own event logger by extending `AbstractEventLogger`
-# https://github.com/iamjpsingh/rama/blob/master/rama/utils/log.py
+# https://github.com/itsjpthakur/rama/blob/master/rama/utils/log.py
 EVENT_LOGGER = DBEventLogger()
 
 RAMA_LOG_VIEW = True
@@ -1561,7 +1561,7 @@ PREFERRED_DATABASES: list[str] = [
 TEST_DATABASE_CONNECTION_TIMEOUT = timedelta(seconds=30)
 
 # Details needed for databases that allows user to authenticate using personal OAuth2
-# tokens. See https://github.com/iamjpsingh/rama/issues/20300 for more information. The
+# tokens. See https://github.com/itsjpthakur/rama/issues/20300 for more information. The
 # scope and URIs are usually optional.
 # NOTE that if you change the id, scope, or URIs in this file, you probably need to purge  # noqa: E501
 # the existing tokens from the database. This needs to be done by running a query to

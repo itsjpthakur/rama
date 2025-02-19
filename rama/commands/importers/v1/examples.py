@@ -138,7 +138,7 @@ class ImportExamplesCommand(ImportModelsCommand):
                     # schema. Users could then add a new dataset with the same name in
                     # the correct schema, resulting in duplicates, since the uniqueness
                     # constraint was not enforced correctly in the application logic.
-                    # See https://github.com/iamjpsingh/rama/issues/16051.
+                    # See https://github.com/itsjpthakur/rama/issues/16051.
                     continue
 
                 dataset_info[str(dataset.uuid)] = {

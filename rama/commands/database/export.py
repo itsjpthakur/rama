@@ -69,7 +69,7 @@ class ExportDatabasesCommand(ExportModelsCommand):
             export_uuids=True,
         )
 
-        # https://github.com/iamjpsingh/rama/pull/16756 renamed ``allow_csv_upload``
+        # https://github.com/itsjpthakur/rama/pull/16756 renamed ``allow_csv_upload``
         # to ``allow_file_upload`, but we can't change the V1 schema
         replacements = {"allow_file_upload": "allow_csv_upload"}
         # this preserves key order, which is important

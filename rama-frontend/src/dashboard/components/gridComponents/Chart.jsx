@@ -475,9 +475,9 @@ const Chart = props => {
       {/*
           This usage of dangerouslySetInnerHTML is safe since it is being used to render
           markdown that is sanitized with nh3. See:
-             https://github.com/iamjpsingh/rama/pull/4390
+             https://github.com/itsjpthakur/rama/pull/4390
           and
-             https://github.com/iamjpsingh/rama/pull/23862
+             https://github.com/itsjpthakur/rama/pull/23862
         */}
       {isExpanded && slice.description_markeddown && (
         <div

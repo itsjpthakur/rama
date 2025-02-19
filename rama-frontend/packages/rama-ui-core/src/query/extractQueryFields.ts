@@ -85,7 +85,7 @@ export default function extractQueryFields(
       return;
     }
 
-    // groupby has been deprecated in QueryObject: https://github.com/iamjpsingh/rama/pull/9366
+    // groupby has been deprecated in QueryObject: https://github.com/itsjpthakur/rama/pull/9366
     if (normalizedKey === 'groupby') {
       normalizedKey = 'columns';
     }

@@ -52,7 +52,7 @@ console.log(formatTime('my_format', new Date(2018)));
 ```
 
 It also define constants for common d3 time formats. See
-[TimeFormats.js](https://github.com/iamjpsingh/rama/blob/master/rama-frontend/packages/rama-ui-core/src/time-format/TimeFormats.ts).
+[TimeFormats.js](https://github.com/itsjpthakur/rama/blob/master/rama-frontend/packages/rama-ui-core/src/time-format/TimeFormats.ts).
 
 ```js
 import { TimeFormats } from '@rama-ui/core';

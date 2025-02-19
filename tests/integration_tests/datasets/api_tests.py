@@ -1914,7 +1914,7 @@ class TestDatasetApi(RamaTestCase):
 
         birth_names_dataset = self.get_birth_names_dataset()
         # TODO: fix test for presto
-        # debug with dump: https://github.com/iamjpsingh/rama/runs/1092546855
+        # debug with dump: https://github.com/itsjpthakur/rama/runs/1092546855
         if birth_names_dataset.database.backend in {"presto", "hive"}:
             return
 
@@ -1989,7 +1989,7 @@ class TestDatasetApi(RamaTestCase):
 
         birth_names_dataset = self.get_birth_names_dataset()
         # TODO: fix test for presto
-        # debug with dump: https://github.com/iamjpsingh/rama/runs/1092546855
+        # debug with dump: https://github.com/itsjpthakur/rama/runs/1092546855
         if birth_names_dataset.database.backend in {"presto", "hive"}:
             return
 

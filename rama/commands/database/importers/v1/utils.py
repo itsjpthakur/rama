@@ -56,7 +56,7 @@ def import_database(
             check_sqlalchemy_uri(make_url_safe(config["sqlalchemy_uri"]))
         except RamaSecurityException as exc:
             raise ImportFailedError(exc.message) from exc
-    # https://github.com/iamjpsingh/rama/pull/16756 renamed ``csv`` to ``file``.
+    # https://github.com/itsjpthakur/rama/pull/16756 renamed ``csv`` to ``file``.
     config["allow_file_upload"] = config.pop("allow_csv_upload")
     if "schemas_allowed_for_csv_upload" in config["extra"]:
         config["extra"]["schemas_allowed_for_file_upload"] = config["extra"].pop(

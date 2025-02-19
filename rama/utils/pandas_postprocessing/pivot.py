@@ -81,7 +81,7 @@ def pivot(  # pylint: disable=too-many-arguments
 
     # When dropna = False, the pivot_table function will calculate cartesian-product
     # for MultiIndex.
-    # https://github.com/iamjpsingh/rama/issues/15956
+    # https://github.com/itsjpthakur/rama/issues/15956
     # https://github.com/pandas-dev/pandas/issues/18030
     series_set = set()
     if not drop_missing_columns and columns:

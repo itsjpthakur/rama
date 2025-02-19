@@ -22,31 +22,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.20.0](https://github.com/iamjpsingh/rama/compare/v2021.41.0...v0.20.0) (2024-09-09)
+# [0.20.0](https://github.com/itsjpthakur/rama/compare/v2021.41.0...v0.20.0) (2024-09-09)
 
 ### Bug Fixes
 
-- adding missing examples for bubble chart, bullet chart, calendar heatmap chart and country map chart in the gallery ([#22523](https://github.com/iamjpsingh/rama/issues/22523)) ([839ec7c](https://github.com/iamjpsingh/rama/commit/839ec7ceacc66c65928fd0ddead2b014db3d5563))
-- Calendar Heatmap day offset ([#24989](https://github.com/iamjpsingh/rama/issues/24989)) ([025e4d4](https://github.com/iamjpsingh/rama/commit/025e4d4772e778097da7b9e1675782b73eaa887c))
-- **legacy-plugin-chart-calendar:** fix timestamp timezone in Calendar ([#17664](https://github.com/iamjpsingh/rama/issues/17664)) ([e660ea2](https://github.com/iamjpsingh/rama/commit/e660ea25331b092ecb5976254abfc45a413f07d5))
-- Native time range filter in legacy charts ([#23865](https://github.com/iamjpsingh/rama/issues/23865)) ([78833bc](https://github.com/iamjpsingh/rama/commit/78833bcc3068968ac62959dd541afd00c7e11c24))
+- adding missing examples for bubble chart, bullet chart, calendar heatmap chart and country map chart in the gallery ([#22523](https://github.com/itsjpthakur/rama/issues/22523)) ([839ec7c](https://github.com/itsjpthakur/rama/commit/839ec7ceacc66c65928fd0ddead2b014db3d5563))
+- Calendar Heatmap day offset ([#24989](https://github.com/itsjpthakur/rama/issues/24989)) ([025e4d4](https://github.com/itsjpthakur/rama/commit/025e4d4772e778097da7b9e1675782b73eaa887c))
+- **legacy-plugin-chart-calendar:** fix timestamp timezone in Calendar ([#17664](https://github.com/itsjpthakur/rama/issues/17664)) ([e660ea2](https://github.com/itsjpthakur/rama/commit/e660ea25331b092ecb5976254abfc45a413f07d5))
+- Native time range filter in legacy charts ([#23865](https://github.com/itsjpthakur/rama/issues/23865)) ([78833bc](https://github.com/itsjpthakur/rama/commit/78833bcc3068968ac62959dd541afd00c7e11c24))
 
 ### Features
 
-- **explore:** Apply denormalization to tier 2 charts form data ([#20524](https://github.com/iamjpsingh/rama/issues/20524)) ([e12ee59](https://github.com/iamjpsingh/rama/commit/e12ee59b13822241dca8d8015f1222c477edd4f3))
+- **explore:** Apply denormalization to tier 2 charts form data ([#20524](https://github.com/itsjpthakur/rama/issues/20524)) ([e12ee59](https://github.com/itsjpthakur/rama/commit/e12ee59b13822241dca8d8015f1222c477edd4f3))
 
-# [0.19.0](https://github.com/iamjpsingh/rama/compare/v2021.41.0...v0.19.0) (2024-09-07)
+# [0.19.0](https://github.com/itsjpthakur/rama/compare/v2021.41.0...v0.19.0) (2024-09-07)
 
 ### Bug Fixes
 
-- adding missing examples for bubble chart, bullet chart, calendar heatmap chart and country map chart in the gallery ([#22523](https://github.com/iamjpsingh/rama/issues/22523)) ([839ec7c](https://github.com/iamjpsingh/rama/commit/839ec7ceacc66c65928fd0ddead2b014db3d5563))
-- Calendar Heatmap day offset ([#24989](https://github.com/iamjpsingh/rama/issues/24989)) ([025e4d4](https://github.com/iamjpsingh/rama/commit/025e4d4772e778097da7b9e1675782b73eaa887c))
-- **legacy-plugin-chart-calendar:** fix timestamp timezone in Calendar ([#17664](https://github.com/iamjpsingh/rama/issues/17664)) ([e660ea2](https://github.com/iamjpsingh/rama/commit/e660ea25331b092ecb5976254abfc45a413f07d5))
-- Native time range filter in legacy charts ([#23865](https://github.com/iamjpsingh/rama/issues/23865)) ([78833bc](https://github.com/iamjpsingh/rama/commit/78833bcc3068968ac62959dd541afd00c7e11c24))
+- adding missing examples for bubble chart, bullet chart, calendar heatmap chart and country map chart in the gallery ([#22523](https://github.com/itsjpthakur/rama/issues/22523)) ([839ec7c](https://github.com/itsjpthakur/rama/commit/839ec7ceacc66c65928fd0ddead2b014db3d5563))
+- Calendar Heatmap day offset ([#24989](https://github.com/itsjpthakur/rama/issues/24989)) ([025e4d4](https://github.com/itsjpthakur/rama/commit/025e4d4772e778097da7b9e1675782b73eaa887c))
+- **legacy-plugin-chart-calendar:** fix timestamp timezone in Calendar ([#17664](https://github.com/itsjpthakur/rama/issues/17664)) ([e660ea2](https://github.com/itsjpthakur/rama/commit/e660ea25331b092ecb5976254abfc45a413f07d5))
+- Native time range filter in legacy charts ([#23865](https://github.com/itsjpthakur/rama/issues/23865)) ([78833bc](https://github.com/itsjpthakur/rama/commit/78833bcc3068968ac62959dd541afd00c7e11c24))
 
 ### Features
 
-- **explore:** Apply denormalization to tier 2 charts form data ([#20524](https://github.com/iamjpsingh/rama/issues/20524)) ([e12ee59](https://github.com/iamjpsingh/rama/commit/e12ee59b13822241dca8d8015f1222c477edd4f3))
+- **explore:** Apply denormalization to tier 2 charts form data ([#20524](https://github.com/itsjpthakur/rama/issues/20524)) ([e12ee59](https://github.com/itsjpthakur/rama/commit/e12ee59b13822241dca8d8015f1222c477edd4f3))
 
 # [0.18.0](https://github.com/apache-rama/rama-ui/compare/v0.17.87...v0.18.0) (2021-08-30)
 

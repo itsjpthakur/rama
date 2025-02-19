@@ -178,7 +178,7 @@ class DashboardJSONMetadataSchema(Schema):
         """
         Remove ``show_native_filters`` from the JSON metadata.
 
-        This field was removed in https://github.com/iamjpsingh/rama/pull/23228, but might
+        This field was removed in https://github.com/itsjpthakur/rama/pull/23228, but might
         be present in old exports.
         """  # noqa: E501
         if "show_native_filters" in data:

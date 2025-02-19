@@ -25,7 +25,7 @@ export function getDefaultTooltip(refs: Refs) {
   return {
     appendToBody: true,
     borderColor: 'transparent',
-    // CSS hack applied on this class to resolve https://github.com/iamjpsingh/rama/issues/30058
+    // CSS hack applied on this class to resolve https://github.com/itsjpthakur/rama/issues/30058
     className: 'echarts-tooltip',
     position: (
       canvasMousePos: [number, number],

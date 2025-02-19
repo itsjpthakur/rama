@@ -172,7 +172,7 @@ def import_dashboard(  # noqa: C901
     # TODO (betodealmeida): move this logic to import_from_dict
     config = config.copy()
 
-    # removed in https://github.com/iamjpsingh/rama/pull/23228
+    # removed in https://github.com/itsjpthakur/rama/pull/23228
     if "metadata" in config and "show_native_filters" in config["metadata"]:
         del config["metadata"]["show_native_filters"]
 

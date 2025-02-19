@@ -38,7 +38,7 @@ const DEFAULT_VIEWPORT = {
 };
 
 const sandboxUrl =
-  'https://github.com/iamjpsingh/rama/' +
+  'https://github.com/itsjpthakur/rama/' +
   'blob/master/rama-frontend/plugins/legacy-preset-chart-deckgl/src/utils/sandbox.ts';
 const jsFunctionInfo = (
   <div>

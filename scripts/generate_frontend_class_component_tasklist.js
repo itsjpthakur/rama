@@ -19,7 +19,7 @@
 
 // Run this from the rama-frontend directory with
 // `node ../scripts/generate_frontend_ts_tasklist.js `, then copy and paste the output into
-// https://github.com/iamjpsingh/rama/discussions/26076
+// https://github.com/itsjpthakur/rama/discussions/26076
 const { readdirSync, readFileSync } = require("fs");
 const process = require("process");
 

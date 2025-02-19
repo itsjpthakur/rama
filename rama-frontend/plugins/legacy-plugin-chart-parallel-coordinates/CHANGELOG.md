@@ -22,27 +22,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.20.0](https://github.com/iamjpsingh/rama/compare/v2021.41.0...v0.20.0) (2024-09-09)
+# [0.20.0](https://github.com/itsjpthakur/rama/compare/v2021.41.0...v0.20.0) (2024-09-09)
 
 ### Bug Fixes
 
-- **explore:** make SORT-Descending visible if Sort-by has value ([#17726](https://github.com/iamjpsingh/rama/issues/17726)) ([d5768ab](https://github.com/iamjpsingh/rama/commit/d5768ab649a70fd4f541ad4982498f622160b220))
-- warning of nth-child ([#23638](https://github.com/iamjpsingh/rama/issues/23638)) ([16cc089](https://github.com/iamjpsingh/rama/commit/16cc089b198dcdebc2422845aa08d18233c6b3a4))
+- **explore:** make SORT-Descending visible if Sort-by has value ([#17726](https://github.com/itsjpthakur/rama/issues/17726)) ([d5768ab](https://github.com/itsjpthakur/rama/commit/d5768ab649a70fd4f541ad4982498f622160b220))
+- warning of nth-child ([#23638](https://github.com/itsjpthakur/rama/issues/23638)) ([16cc089](https://github.com/itsjpthakur/rama/commit/16cc089b198dcdebc2422845aa08d18233c6b3a4))
 
 ### Features
 
-- **viz picker:** Remove some tags, refactor Recommended section ([#27708](https://github.com/iamjpsingh/rama/issues/27708)) ([c314999](https://github.com/iamjpsingh/rama/commit/c3149994ac0d4392e0462421b62cd0c034142082))
+- **viz picker:** Remove some tags, refactor Recommended section ([#27708](https://github.com/itsjpthakur/rama/issues/27708)) ([c314999](https://github.com/itsjpthakur/rama/commit/c3149994ac0d4392e0462421b62cd0c034142082))
 
-# [0.19.0](https://github.com/iamjpsingh/rama/compare/v2021.41.0...v0.19.0) (2024-09-07)
+# [0.19.0](https://github.com/itsjpthakur/rama/compare/v2021.41.0...v0.19.0) (2024-09-07)
 
 ### Bug Fixes
 
-- **explore:** make SORT-Descending visible if Sort-by has value ([#17726](https://github.com/iamjpsingh/rama/issues/17726)) ([d5768ab](https://github.com/iamjpsingh/rama/commit/d5768ab649a70fd4f541ad4982498f622160b220))
-- warning of nth-child ([#23638](https://github.com/iamjpsingh/rama/issues/23638)) ([16cc089](https://github.com/iamjpsingh/rama/commit/16cc089b198dcdebc2422845aa08d18233c6b3a4))
+- **explore:** make SORT-Descending visible if Sort-by has value ([#17726](https://github.com/itsjpthakur/rama/issues/17726)) ([d5768ab](https://github.com/itsjpthakur/rama/commit/d5768ab649a70fd4f541ad4982498f622160b220))
+- warning of nth-child ([#23638](https://github.com/itsjpthakur/rama/issues/23638)) ([16cc089](https://github.com/itsjpthakur/rama/commit/16cc089b198dcdebc2422845aa08d18233c6b3a4))
 
 ### Features
 
-- **viz picker:** Remove some tags, refactor Recommended section ([#27708](https://github.com/iamjpsingh/rama/issues/27708)) ([c314999](https://github.com/iamjpsingh/rama/commit/c3149994ac0d4392e0462421b62cd0c034142082))
+- **viz picker:** Remove some tags, refactor Recommended section ([#27708](https://github.com/itsjpthakur/rama/issues/27708)) ([c314999](https://github.com/itsjpthakur/rama/commit/c3149994ac0d4392e0462421b62cd0c034142082))
 
 # [0.18.0](https://github.com/apache-rama/rama-ui/compare/v0.17.87...v0.18.0) (2021-08-30)
 

@@ -49,10 +49,10 @@ def upgrade():
     Remove any erroneous time granularity fields from slices foor those visualization
     types which do not support time granularity.
 
-    :see: https://github.com/iamjpsingh/rama/pull/8674
-    :see: https://github.com/iamjpsingh/rama/pull/8764
-    :see: https://github.com/iamjpsingh/rama/pull/8800
-    :see: https://github.com/iamjpsingh/rama/pull/8825
+    :see: https://github.com/itsjpthakur/rama/pull/8674
+    :see: https://github.com/itsjpthakur/rama/pull/8764
+    :see: https://github.com/itsjpthakur/rama/pull/8800
+    :see: https://github.com/itsjpthakur/rama/pull/8825
     """
 
     bind = op.get_bind()

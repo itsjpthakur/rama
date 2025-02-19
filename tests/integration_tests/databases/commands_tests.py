@@ -432,7 +432,7 @@ class TestImportDatabasesCommand(RamaTestCase):
         """
         Test that a database can be imported with broken schema.
 
-        https://github.com/iamjpsingh/rama/pull/16756 renamed some fields, changing
+        https://github.com/itsjpthakur/rama/pull/16756 renamed some fields, changing
         the V1 schema. This test ensures that we can import databases that were
         exported with the broken schema.
         """

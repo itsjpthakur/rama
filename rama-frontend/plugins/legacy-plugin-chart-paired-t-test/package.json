@@ -5,13 +5,13 @@
   "keywords": [
     "rama"
   ],
-  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/legacy-plugin-chart-paired-t-test#readme",
+  "homepage": "https://github.com/itsjpthakur/rama/tree/master/rama-frontend/plugins/legacy-plugin-chart-paired-t-test#readme",
   "bugs": {
-    "url": "https://github.com/iamjpsingh/rama/issues"
+    "url": "https://github.com/itsjpthakur/rama/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamjpsingh/rama.git",
+    "url": "https://github.com/itsjpthakur/rama.git",
     "directory": "rama-frontend/plugins/legacy-plugin-chart-paired-t-test"
   },
   "license": "Apache-2.0",

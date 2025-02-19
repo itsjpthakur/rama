@@ -19,7 +19,7 @@
 
 import CategoricalScheme from '../../CategoricalScheme';
 
-// TODO: add the colors to the theme while working on SIP https://github.com/iamjpsingh/rama/issues/20159
+// TODO: add the colors to the theme while working on SIP https://github.com/itsjpthakur/rama/issues/20159
 const schemes = [
   {
     id: 'googleCategory10c',

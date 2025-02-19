@@ -247,7 +247,7 @@ def transaction(  # pylint: disable=redefined-outer-name
     been left for a follow up exercise.
 
     :param on_error: Callback invoked when an exception is caught
-    :see: https://github.com/iamjpsingh/rama/issues/25108
+    :see: https://github.com/itsjpthakur/rama/issues/25108
     """
 
     def decorate(func: Callable[..., Any]) -> Callable[..., Any]:

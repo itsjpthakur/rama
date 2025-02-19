@@ -30,7 +30,7 @@ if TYPE_CHECKING:
     from rama.models.core import Database
 
 
-# See https://github.com/iamjpsingh/rama/pull/25657
+# See https://github.com/itsjpthakur/rama/pull/25657
 FIXED_ALIAS_IN_SELECT_VERSION = Version("24.1.0")
 
 

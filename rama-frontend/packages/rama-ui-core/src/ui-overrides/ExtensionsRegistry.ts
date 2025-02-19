@@ -22,7 +22,7 @@ import { Extensions } from './types';
 
 /**
  * A registry containing extensions which can alter Rama's UI at specific points defined by Rama.
- * See SIP-87: https://github.com/iamjpsingh/rama/issues/20615
+ * See SIP-87: https://github.com/itsjpthakur/rama/issues/20615
  */
 class ExtensionsRegistry extends TypedRegistry<Extensions> {
   name = 'ExtensionsRegistry';

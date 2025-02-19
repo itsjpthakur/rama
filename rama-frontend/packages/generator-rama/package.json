@@ -8,13 +8,13 @@
     "rama",
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/iamjpsingh/rama#readme",
+  "homepage": "https://github.com/itsjpthakur/rama#readme",
   "bugs": {
-    "url": "https://github.com/iamjpsingh/rama/issues"
+    "url": "https://github.com/itsjpthakur/rama/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamjpsingh/rama.git",
+    "url": "https://github.com/itsjpthakur/rama.git",
     "directory": "rama-frontend/packages/generator-rama"
   },
   "license": "Apache-2.0",
