@@ -1,0 +1,38 @@
+{
+  "name": "@rama-ui/legacy-plugin-chart-paired-t-test",
+  "version": "0.20.3",
+  "description": "Rama Legacy Chart - Paired T Test",
+  "keywords": [
+    "rama"
+  ],
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/legacy-plugin-chart-paired-t-test#readme",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/plugins/legacy-plugin-chart-paired-t-test"
+  },
+  "license": "Apache-2.0",
+  "author": "Rama",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "distributions": "^2.2.0",
+    "prop-types": "^15.8.1",
+    "reactable": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@rama-ui/chart-controls": "*",
+    "@rama-ui/core": "*",
+    "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

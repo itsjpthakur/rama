@@ -1,0 +1,163 @@
+{{/*
+
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+*/}}
+
+{{- if .Values.ramaCeleryFlower.enabled -}}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "rama.fullname" . }}-flower
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ template "rama.name" . }}-flower
+    chart: {{ template "rama.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    {{- if .Values.extraLabels }}
+      {{- toYaml .Values.extraLabels | nindent 4 }}
+    {{- end }}
+  {{- if .Values.ramaCeleryFlower.deploymentAnnotations }}
+  annotations: {{- toYaml .Values.ramaCeleryFlower.deploymentAnnotations | nindent 4 }}
+  {{- end }}
+spec:
+  replicas: {{ .Values.ramaCeleryFlower.replicaCount }}
+  selector:
+    matchLabels:
+    {{- include "ramaCeleryFlower.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      annotations:
+        checksum/config: {{ include "rama-config" . | sha256sum }}
+        checksum/secrets: {{ tpl (toJson .Values.extraSecretEnv) . | sha256sum }}
+        {{- if .Values.ramaCeleryFlower.podAnnotations }}
+          {{- toYaml .Values.ramaCeleryFlower.podAnnotations | nindent 8 }}
+        {{- end }}
+      labels:
+        app: "{{ template "rama.name" . }}-flower"
+        release: {{ .Release.Name }}
+        {{- if .Values.extraLabels }}
+          {{- toYaml .Values.extraLabels | nindent 8 }}
+        {{- end }}
+        {{- if .Values.ramaCeleryFlower.podLabels }}
+          {{- toYaml .Values.ramaCeleryFlower.podLabels | nindent 8 }}
+        {{- end }}
+    spec:
+      {{- if or (.Values.serviceAccount.create) (.Values.serviceAccountName) }}
+      serviceAccountName: {{ template "rama.serviceAccountName" . }}
+      {{- end }}
+      securityContext:
+        runAsUser: {{ .Values.runAsUser }}
+        {{- if .Values.ramaCeleryFlower.podSecurityContext }}
+          {{- toYaml .Values.ramaCeleryFlower.podSecurityContext | nindent 8 }}
+        {{- end }}
+      {{- if .Values.ramaCeleryFlower.initContainers }}
+      initContainers: {{-  tpl (toYaml .Values.ramaCeleryFlower.initContainers) . | nindent 6 }}
+      {{- end }}
+      {{- with .Values.hostAliases }}
+      hostAliases: {{- toYaml . | nindent 6 }}
+      {{- end }}
+      containers:
+        - name: "{{ .Chart.Name }}-flower"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{- if .Values.ramaCeleryFlower.containerSecurityContext }}
+          securityContext: {{- toYaml .Values.ramaCeleryFlower.containerSecurityContext | nindent 12 }}
+          {{- end }}
+          command: {{  tpl (toJson .Values.ramaCeleryFlower.command) . }}
+          env:
+            {{- range $key, $value := .Values.extraEnv }}
+            - name: {{ $key | quote}}
+              value: {{ $value | quote }}
+            {{- end }}
+            {{- if .Values.extraEnvRaw }}
+              {{- toYaml .Values.extraEnvRaw | nindent 12 }}
+            {{- end }}
+          envFrom:
+            - secretRef:
+                name: {{ tpl .Values.envFromSecret . | quote }}
+            {{- range .Values.envFromSecrets }}
+            - secretRef:
+                name: {{ tpl . $ | quote }}
+            {{- end }}
+          ports:
+            - name: flower
+              containerPort: 5555
+              protocol: TCP
+          volumeMounts:
+            - name: rama-config
+              mountPath: {{ .Values.configMountPath | quote }}
+              readOnly: true
+            {{- with .Values.extraVolumeMounts }}
+              {{- tpl (toYaml .) $ | nindent 12 -}}
+            {{- end }}
+          {{- if .Values.ramaCeleryFlower.startupProbe }}
+          startupProbe: {{- .Values.ramaCeleryFlower.startupProbe | toYaml | nindent 12 }}
+          {{- end }}
+          {{- if .Values.ramaCeleryFlower.readinessProbe }}
+          readinessProbe: {{- .Values.ramaCeleryFlower.readinessProbe | toYaml | nindent 12 }}
+          {{- end }}
+          {{- if .Values.ramaCeleryFlower.livenessProbe }}
+          livenessProbe: {{- .Values.ramaCeleryFlower.livenessProbe | toYaml | nindent 12 }}
+          {{- end }}
+          resources:
+            {{- if .Values.ramaCeleryFlower.resources }}
+              {{- toYaml .Values.ramaCeleryFlower.resources | nindent 12 }}
+            {{- else }}
+              {{- toYaml .Values.resources | nindent 12 }}
+            {{- end }}
+        {{- if .Values.ramaCeleryFlower.extraContainers }}
+            {{- toYaml .Values.ramaCeleryFlower.extraContainers | nindent 8 }}
+        {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector: {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if or .Values.affinity .Values.ramaCeleryFlower.affinity }}
+      affinity:
+        {{- with .Values.affinity }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
+        {{- with .Values.ramaCeleryFlower.affinity }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
+      {{- end }}
+      {{- if .Values.ramaCeleryFlower.priorityClassName }}
+      priorityClassName: {{ .Values.ramaCeleryFlower.priorityClassName }}
+      {{- end }}
+      {{- if or .Values.topologySpreadConstraints .Values.ramaCeleryFlower.topologySpreadConstraints }}
+      topologySpreadConstraints:
+        {{- with .Values.topologySpreadConstraints }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
+        {{- with .Values.ramaCeleryFlower.topologySpreadConstraints }}
+          {{- toYaml . | nindent 8 }}
+        {{- end }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations: {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if .Values.imagePullSecrets }}
+      imagePullSecrets: {{- toYaml .Values.imagePullSecrets | nindent 8 }}
+      {{- end }}
+      volumes:
+        - name: rama-config
+          secret:
+            secretName: {{ tpl .Values.configFromSecret . }}
+        {{- with .Values.extraVolumes }}
+          {{- tpl (toYaml .) $ | nindent 8 -}}
+        {{- end }}
+{{- end -}}

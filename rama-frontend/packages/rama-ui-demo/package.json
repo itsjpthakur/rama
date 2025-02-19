@@ -1,0 +1,85 @@
+{
+  "name": "@rama-ui/demo",
+  "version": "0.20.0",
+  "private": true,
+  "description": "Storybook for Rama UI ✨",
+  "keywords": [
+    "storybook",
+    "rama",
+    "ui",
+    "visualization",
+    "analysis",
+    "data"
+  ],
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/packages/rama-ui-demo#readme",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/packages/rama-ui-demo"
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "build-storybook": "npm run demo:clean && storybook build",
+    "demo:build": "npm run demo:clean && storybook build -o _gh-pages",
+    "demo:clean": "rm -rf _gh-pages",
+    "demo:publish": "gh-pages -d _gh-pages",
+    "deploy-demo": "npm run demo:build && npm run demo:publish && npm run demo:clean",
+    "storybook": "storybook dev -p 9001"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mihkeleidast/storybook-addon-source": "^1.0.1",
+    "@react-icons/all-files": "^4.1.0",
+    "@storybook/addon-actions": "8.1.11",
+    "@storybook/addon-controls": "8.1.11",
+    "@storybook/addon-links": "8.1.11",
+    "@storybook/react": "8.1.11",
+    "@storybook/types": "8.4.7",
+    "@types/react-loadable": "^5.5.11",
+    "antd": "4.10.3",
+    "core-js": "3.39.0",
+    "gh-pages": "^6.2.0",
+    "jquery": "^3.7.1",
+    "memoize-one": "^5.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-loadable": "^5.5.0",
+    "react-resizable": "^3.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@storybook/react-webpack5": "8.2.9",
+    "babel-loader": "^9.1.3",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "@encodable/color": "=1.1.1",
+    "@rama-ui/core": "*",
+    "@rama-ui/legacy-plugin-chart-calendar": "*",
+    "@rama-ui/legacy-plugin-chart-chord": "*",
+    "@rama-ui/legacy-plugin-chart-country-map": "*",
+    "@rama-ui/legacy-plugin-chart-horizon": "*",
+    "@rama-ui/legacy-plugin-chart-map-box": "*",
+    "@rama-ui/legacy-plugin-chart-paired-t-test": "*",
+    "@rama-ui/legacy-plugin-chart-parallel-coordinates": "*",
+    "@rama-ui/legacy-plugin-chart-partition": "*",
+    "@rama-ui/legacy-plugin-chart-rose": "*",
+    "@rama-ui/legacy-plugin-chart-world-map": "*",
+    "@rama-ui/legacy-preset-chart-deckgl": "*",
+    "@rama-ui/legacy-preset-chart-nvd3": "*",
+    "@rama-ui/plugin-chart-echarts": "*",
+    "@rama-ui/plugin-chart-table": "*",
+    "@rama-ui/plugin-chart-word-cloud": "*"
+  }
+}

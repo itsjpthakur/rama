@@ -1,0 +1,12 @@
+{
+  "domain": "rama",
+  "locale_data": {
+    "rama": {
+      "": {
+        "domain": "rama",
+        "plural_forms": "nplurals=2; plural=(n != 1)",
+        "lang": "en"
+      }
+    }
+  }
+}

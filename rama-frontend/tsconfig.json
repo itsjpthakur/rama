@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+
+    /* Modules */
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@rama-ui/core": ["./packages/rama-ui-core/src"],
+      "@rama-ui/chart-controls": [
+        "./packages/rama-ui-chart-controls/src"
+      ],
+      "@rama-ui/legacy-plugin-chart-*": [
+        "./plugins/legacy-plugin-chart-*/src"
+      ],
+      "@rama-ui/legacy-preset-chart-*": [
+        "./plugins/legacy-preset-chart-*/src"
+      ],
+      "@rama-ui/plugin-chart-*": ["./plugins/plugin-chart-*/src"],
+      "@rama-ui/preset-chart-*": ["./plugins/preset-chart-*/src"],
+      "@rama-ui/switchboard": ["./packages/rama-ui-switchboard/src"]
+    },
+    "types": [
+      "@emotion/react/types/css-prop",
+      "jest",
+      "@testing-library/jest-dom",
+      "@types/node"
+    ],
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "importHelpers": false,
+    "noEmitOnError": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Language and Environment */
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    /* Projects */
+    "composite": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "./packages/generator-rama/test/**/*"
+  ],
+  "include": [
+    "./src/**/*",
+    "./spec/**/*",
+    "./packages/*/src/**/*",
+    "./packages/*/types/**/*",
+    "./plugins/*/src/**/*",
+    "./plugins/*/types/**/*",
+    "./packages/*/test/**/*",
+    "./plugins/*/test/**/*"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@rama-ui/legacy-preset-chart-nvd3",
+  "version": "0.20.3",
+  "description": "Rama Legacy Chart - NVD3",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/packages/legacy-preset-chart-nvd3"
+  },
+  "keywords": [
+    "rama"
+  ],
+  "author": "Rama",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/legacy-preset-chart-nvd3#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "d3-tip": "^0.9.1",
+    "dompurify": "^3.2.4",
+    "fast-safe-stringify": "^2.1.1",
+    "lodash": "^4.17.21",
+    "dayjs": "^1.11.13",
+    "nvd3-fork": "^2.0.5",
+    "prop-types": "^15.8.1",
+    "urijs": "^1.19.11"
+  },
+  "peerDependencies": {
+    "@rama-ui/chart-controls": "*",
+    "@rama-ui/core": "*",
+    "react": "^17.0.2"
+  }
+}

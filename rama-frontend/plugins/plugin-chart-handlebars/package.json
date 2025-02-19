@@ -1,0 +1,49 @@
+{
+  "name": "@rama-ui/plugin-chart-handlebars",
+  "version": "0.20.3",
+  "description": "Rama Chart - Write a handlebars template to render the data",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/plugins/plugin-chart-handlebars"
+  },
+  "keywords": [
+    "rama"
+  ],
+  "author": "Rama",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/plugin-chart-handlebars#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "handlebars-group-by": "^1.0.1",
+    "just-handlebars-helpers": "^1.0.19"
+  },
+  "peerDependencies": {
+    "@rama-ui/chart-controls": "*",
+    "@rama-ui/core": "*",
+    "ace-builds": "^1.4.14",
+    "lodash": "^4.17.11",
+    "dayjs": "^1.11.13",
+    "react": "^17.0.2",
+    "react-ace": "^10.1.0",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.13",
+    "jest": "^29.7.0"
+  }
+}

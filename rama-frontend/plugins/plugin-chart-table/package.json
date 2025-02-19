@@ -1,0 +1,56 @@
+{
+  "name": "@rama-ui/plugin-chart-table",
+  "version": "0.20.3",
+  "description": "Rama Chart - Table",
+  "keywords": [
+    "rama"
+  ],
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/plugin-chart-table#readme",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/plugins/plugin-chart-table"
+  },
+  "license": "Apache-2.0",
+  "author": "Rama",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "@types/d3-array": "^2.9.0",
+    "@types/react-table": "^7.7.20",
+    "classnames": "^2.5.1",
+    "d3-array": "^2.4.0",
+    "lodash": "^4.17.21",
+    "memoize-one": "^5.2.1",
+    "react-table": "^7.8.0",
+    "regenerator-runtime": "^0.14.1",
+    "xss": "^1.0.15"
+  },
+  "peerDependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@rama-ui/chart-controls": "*",
+    "@rama-ui/core": "*",
+    "@testing-library/dom": "^8.20.1",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "*",
+    "@testing-library/user-event": "*",
+    "@types/classnames": "*",
+    "@types/react": "*",
+    "match-sorter": "^6.3.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

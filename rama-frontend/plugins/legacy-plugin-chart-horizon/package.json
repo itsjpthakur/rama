@@ -1,0 +1,38 @@
+{
+  "name": "@rama-ui/legacy-plugin-chart-horizon",
+  "version": "0.20.3",
+  "description": "Rama Legacy Chart - Horizon",
+  "keywords": [
+    "rama"
+  ],
+  "homepage": "https://github.com/iamjpsingh/rama/tree/master/rama-frontend/plugins/legacy-plugin-chart-horizon#readme",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/packages/legacy-plugin-chart-horizon"
+  },
+  "license": "Apache-2.0",
+  "author": "Rama",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "d3-array": "^2.0.3",
+    "d3-scale": "^3.0.1",
+    "prop-types": "^15.8.1"
+  },
+  "peerDependencies": {
+    "@rama-ui/chart-controls": "*",
+    "@rama-ui/core": "*",
+    "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@rama-ui/switchboard",
+  "version": "0.20.3",
+  "description": "Switchboard is a library to make it easier to communicate across browser windows using the MessageChannel API",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjpsingh/rama.git",
+    "directory": "rama-frontend/packages/rama-ui-switchboard"
+  },
+  "keywords": [
+    "switchboard",
+    "iframe",
+    "communication",
+    "messagechannel",
+    "messageport",
+    "postmessage"
+  ],
+  "author": "Rama",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iamjpsingh/rama/issues"
+  },
+  "homepage": "https://github.com/iamjpsingh/rama#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
